@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.profile.generalsetting.ConditionActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.044"
+        app:subtitleTextAppearance="@style/TextView.PoppinsNormal14sp8D92A3"
+        app:title="Persyaratan &amp; Kondisi"
+        app:titleTextAppearance="@style/TextView.PoppinsNormal22sp020202" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:theme="@style/TextView.PoppinsNormal14spBlack"
+            android:layout_marginStart="26dp"
+            android:layout_marginBottom="20dp"
+            android:text="1"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/TextView.PoppinsNormal14spBlack"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginBottom="20dp"
+            android:justificationMode="inter_word"
+            android:text="Dengan mengunduh, menginstal, atau menggunakan aplikasi ini, Anda dianggap telah membaca, memahami, dan menerima sepenuhnya semua persyaratan dan kondisi yang tercantum di sini."/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:theme="@style/TextView.PoppinsNormal14spBlack"
+            android:layout_marginStart="22dp"
+            android:layout_marginBottom="20dp"
+            android:text="2"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/TextView.PoppinsNormal14spBlack"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginBottom="20dp"
+            android:justificationMode="inter_word"
+            android:text="Untuk menggunakan sebagian besar fitur aplikasi, pengguna diharuskan membuat akun pengguna dengan memberikan informasi pribadi yang akurat dan lengkap."/>
+    </LinearLayout>
+
+</LinearLayout>

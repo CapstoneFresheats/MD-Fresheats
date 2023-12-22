@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true"
+    tools:context=".ui.auth.signin.SigninFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFF"
+        android:layout_marginTop="24dp"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp"
+        android:paddingTop="26dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_marginTop="16dp"
+            style="@style/TextView.PoppinsNormal16sp020202"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nomor Telepon" />
+
+        <EditText
+            android:id="@+id/etPhoneNumber"
+            android:inputType="number"
+            android:hint="Masukkan Nomor Telepon Anda"
+            android:layout_marginTop="6dp"
+            android:padding="10dp"
+            style="@style/EditText.PoppinsNormal16sp8D92A3"
+            android:background="@drawable/shape_rectangle_outline_8_020202"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_marginTop="16dp"
+            style="@style/TextView.PoppinsNormal16sp020202"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kota" />
+
+        <EditText
+            android:id="@+id/etCity"
+            android:layout_marginTop="6dp"
+            android:padding="10dp"
+            style="@style/EditText.PoppinsNormal16sp8D92A3"
+            android:background="@drawable/shape_rectangle_outline_8_020202"
+            android:hint="Masukkan Alamat Kota Anda"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_marginTop="16dp"
+            style="@style/TextView.PoppinsNormal16sp020202"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Alamat" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/addressInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            app:hintEnabled="false">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etAddress"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:padding="10dp"
+                style="@style/EditText.PoppinsNormal16sp8D92A3"
+                android:background="@drawable/shape_rectangle_outline_8_020202"
+                android:gravity="top|start"
+            android:hint="Masukkan Alamat Lengkap Anda" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btnSignUpNow"
+            style="@style/Button.Primary"
+            android:text="Sign Up Now"
+            android:backgroundTint="@color/green100"
+            android:textAllCaps="false"
+            android:layout_marginTop="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

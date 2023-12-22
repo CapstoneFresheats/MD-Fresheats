@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.profile.generalsetting.PrivacyPolicyActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.044"
+        app:subtitleTextAppearance="@style/TextView.PoppinsNormal14sp8D92A3"
+        app:title="Kebijakan Privacy"
+        app:titleTextAppearance="@style/TextView.PoppinsNormal22sp020202" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:theme="@style/TextView.PoppinsNormal14spBlack"
+            android:layout_marginStart="26dp"
+            android:layout_marginBottom="20dp"
+            android:text="1"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/TextView.PoppinsNormal14spBlack"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginBottom="20dp"
+            android:justificationMode="inter_word"
+            android:text="Aplikasi ini dapat mengumpulkan informasi pribadi yang diperlukan untuk penggunaan aplikasi dan peningkatan pengalaman pengguna. Informasi yang mungkin dikumpulkan meliputi, namun tidak terbatas pada, nama, alamat email, dan data demografis."/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:theme="@style/TextView.PoppinsNormal14spBlack"
+            android:layout_marginStart="22dp"
+            android:layout_marginBottom="20dp"
+            android:text="2"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/TextView.PoppinsNormal14spBlack"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginBottom="20dp"
+            android:justificationMode="inter_word"
+            android:text="Informasi yang dikumpulkan dapat digunakan untuk menyediakan layanan aplikasi, mempersonalisasi pengalaman pengguna, dan mengirimkan pembaruan relevan."/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:theme="@style/TextView.PoppinsNormal14spBlack"
+            android:layout_marginStart="22dp"
+            android:layout_marginBottom="20dp"
+            android:text="3"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/TextView.PoppinsNormal14spBlack"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginBottom="20dp"
+            android:justificationMode="inter_word"
+            android:text="Kami berkomitmen untuk menjaga keamanan informasi pengguna. Tindakan keamanan teknis dan organisasi yang sesuai akan diterapkan untuk melindungi informasi dari akses yang tidak sah atau penggunaan yang tidak sah."/>
+    </LinearLayout>
+
+</LinearLayout>

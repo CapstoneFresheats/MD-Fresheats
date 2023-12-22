@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+
+    tools:context=".ui.clasisfication.ClassificationFragment">
+
+    <TextView
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="24dp"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/TextView.PoppinsNormal22sp020202"
+        android:text="Pindai Makanan Kamu"
+        app:titleTextAppearance="@style/TextView.PoppinsNormal22sp020202" />
+
+    <ImageView
+        android:id="@+id/imgclassification"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        android:src="@drawable/img_scan"/>
+
+    <TextView
+        android:id="@+id/tvdesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        style="@style/TextView.PoppinsNormal14sp202020"
+        android:textStyle="bold"
+        android:text="Mohon Masukkan Gambar \n yang ingin anda klasifikasi"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btncamera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Button.Secondary"
+            android:text="Camera"
+            android:layout_marginStart="60dp"/>
+
+        <Button
+            android:id="@+id/btngallery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Button.Secondary"
+            android:text="Gallery"
+            android:layout_marginStart="70dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvresult"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Hasil Kesegaran"
+        style="@style/TextView.PoppinsNormal15sp1ABC9C"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"/>
+
+    </LinearLayout>

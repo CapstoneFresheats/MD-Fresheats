@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="80dp"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".ui.detail.payment.PaymentSuccessFragment">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/loadingAnimation"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/make_order" />
+
+    <TextView
+        android:id="@+id/TvTittle"
+        style="@style/TextView.PoppinsNormal20sp020202"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Kamu membuat pesanan" />
+
+    <TextView
+        android:id="@+id/TvSubtitle"
+        style="@style/TextView.PoppinsNormal14sp8D92A3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="Tetaplah di rumah selagi kita \n menyiapkan pesanan Anda"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/btnOrderOther"
+        style="@style/Button.Primary"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:fontFamily="@font/poppins"
+        android:padding="6dp"
+        android:text="Buat Pesanan Lain"
+        android:textAllCaps="false"
+        android:textColor="@color/black" />
+
+</LinearLayout>

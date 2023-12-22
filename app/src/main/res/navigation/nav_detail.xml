@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/fragmentDetail"
+    android:id="@+id/nav_detail">
+
+    <fragment android:id="@+id/fragmentDetail"
+        android:name="com.capstone.fresheats.ui.detail.DetailFragment"
+        tools:layout="@layout/fragment_detail">
+
+        <action android:id="@+id/action_payment"
+            app:destination="@+id/fragmentPayment"/>
+
+        <argument android:name="data"
+            app:argType="com.capstone.fresheats.model.response.home.Data"
+            app:nullable="true" />
+
+        <action
+            android:id="@+id/action_fragmentDetail_to_fragmentPayment"
+            app:destination="@id/fragmentPayment" />
+        <action
+            android:id="@+id/action_fragmentDetail_to_fragmentPayment2"
+            app:destination="@id/fragmentPayment" />
+    </fragment>
+
+    <fragment android:id="@+id/fragmentPayment"
+        android:name="com.capstone.fresheats.ui.detail.payment.PaymentFragment"
+        tools:layout="@layout/fragment_payment">
+
+        <action android:id="@+id/action_payment_success"
+            app:destination="@+id/fragmentPaymentSuccess"/>
+    </fragment>
+
+    <fragment android:id="@+id/fragmentPaymentSuccess"
+        android:name="com.capstone.fresheats.ui.detail.payment.PaymentSuccessFragment"
+        tools:layout="@layout/fragment_payment_success">
+    </fragment>
+
+</navigation>
